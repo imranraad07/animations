@@ -22,6 +22,7 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
         android:scrollbars="none">
 
         <com.google.android.material.circularreveal.CircularRevealLinearLayout
@@ -30,261 +31,274 @@
             android:orientation="vertical">
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:onClick="defaultAnimation"
-                app:backgroundTint="@android:color/holo_red_dark"
                 android:text="Default Animations"
                 android:textAllCaps="false" />
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:onClick="scaleAnimation"
-                app:backgroundTint="@android:color/holo_orange_dark"
                 android:text="Scale Animations"
                 android:textAllCaps="false" />
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
-                app:backgroundTint="@android:color/holo_green_dark"
                 android:onClick="clipAnimation"
-                android:text="Clip Animations"
+                android:text="Clip Animations(sdk >= 23)"
                 android:textAllCaps="false" />
 
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Following animations are custom transtions. animation time: 400ms(medium)" />
+                android:text="Following animations are custom transtions. animation time: 400ms(medium)"
+                app:backgroundTint="@android:color/black" />
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
-                app:backgroundTint="@android:color/holo_orange_dark"
                 android:onClick="translateAnimationLeftRight"
                 android:text="Translate Animations Left to Right"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                app:backgroundTint="@color/sample_red" />
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
-                app:backgroundTint="@android:color/holo_red_dark"
                 android:onClick="translateAnimationRightLeft"
                 android:text="Translate Animations Right to Left"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                app:backgroundTint="@color/sample_blue" />
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
-                app:backgroundTint="@android:color/holo_green_dark"
                 android:onClick="translateAnimationTopBottom"
                 android:text="Translate Animations Top to Bottom"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                app:backgroundTint="@color/sample_green" />
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:onClick="translateAnimationBottomTop"
                 android:text="Translate Animations Bottom to Top"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                app:backgroundTint="@color/sample_yellow" />
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
-                app:backgroundTint="@android:color/holo_red_dark"
                 android:onClick="translateAnimationFade"
                 android:text="Translate Animations Fade"
                 android:textAllCaps="false" />
 
             <com.google.android.material.button.MaterialButton
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Shared Transtion (disabled)"
+                android:textAllCaps="false"
+                app:backgroundTint="@android:color/black" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Circular Reveal From Top (disabled)"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@color/sample_red" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Circular Reveal From Bottom (disabled)"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@color/sample_yellow" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Circular Reveal From Middle (disabled)"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@color/sample_green" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Circular Reveal From Touch Point (disabled)"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@color/sample_blue" />
+
+            <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:backgroundTint="@android:color/holo_green_dark"
-                android:text="Shared Transtion"
-                android:textAllCaps="false" />
+                android:text="Following animations are overridePendingTransition. animation time: 400ms(medium)"
+                app:backgroundTint="@android:color/black" />
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="match_parent"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Circular Reveal From Top"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                app:backgroundTint="@android:color/holo_red_dark" />
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Circular Reveal From Bottom"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                app:backgroundTint="@android:color/holo_blue_dark" />
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Circular Reveal From Middle"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                app:backgroundTint="@android:color/holo_green_dark" />
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Circular Reveal From Touch Point"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                app:backgroundTint="@android:color/holo_orange_dark" />
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Following animations are overridePendingTransition. animation time: 400ms(medium)" />
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:onClick="zoom"
-                app:backgroundTint="@android:color/holo_red_dark"
                 android:text="Zoom Animations"
                 android:textAllCaps="false" />
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:onClick="card"
                 android:text="Card Animations"
                 android:textAllCaps="false" />
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:onClick="split"
-                app:backgroundTint="@android:color/holo_green_dark"
                 android:text="Split Animations"
                 android:textAllCaps="false" />
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:onClick="shrink"
-                app:backgroundTint="@android:color/holo_blue_dark"
                 android:text="Shrink Animations"
                 android:textAllCaps="false" />
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
-                app:backgroundTint="@android:color/holo_orange_dark"
                 android:onClick="inAndOut"
                 android:text="In And Out Animations"
                 android:textAllCaps="false" />
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:onClick="swipeLeft"
-                app:backgroundTint="@android:color/holo_green_dark"
                 android:text="Swipe Left Animations"
                 android:textAllCaps="false" />
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:onClick="swipeRight"
-                app:backgroundTint="@android:color/holo_blue_dark"
                 android:text="Swipe Right Animations"
                 android:textAllCaps="false" />
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:onClick="slideLeft"
-                app:backgroundTint="@android:color/holo_orange_dark"
                 android:text="Slide Left Animations"
                 android:textAllCaps="false" />
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
-                app:backgroundTint="@android:color/holo_green_dark"
                 android:onClick="slideRight"
                 android:text="Slide Right Animations"
                 android:textAllCaps="false" />
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:onClick="slideDown"
-                app:backgroundTint="@android:color/holo_orange_dark"
                 android:text="Slide Down Animations"
                 android:textAllCaps="false" />
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:onClick="slideUp"
-                app:backgroundTint="@android:color/holo_green_dark"
                 android:text="Slide Up Animations"
                 android:textAllCaps="false" />
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:onClick="fade"
-                app:backgroundTint="@android:color/holo_red_dark"
                 android:text="Fade Animations"
                 android:textAllCaps="false" />
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:onClick="windmill"
-                app:backgroundTint="@android:color/holo_orange_dark"
                 android:text="Windmill Animations"
                 android:textAllCaps="false" />
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:onClick="diagonal"
-                app:backgroundTint="@android:color/holo_green_dark"
                 android:text="Diagonal Animations"
                 android:textAllCaps="false" />
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:onClick="spin"
-                app:backgroundTint="@android:color/holo_blue_dark"
                 android:text="Spin Animations"
                 android:textAllCaps="false" />
         </com.google.android.material.circularreveal.CircularRevealLinearLayout>
