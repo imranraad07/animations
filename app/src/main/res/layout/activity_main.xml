@@ -34,6 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="defaultAnimation"
+                app:backgroundTint="@android:color/holo_red_dark"
                 android:text="Default Animations"
                 android:textAllCaps="false" />
 
@@ -42,6 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="scaleAnimation"
+                app:backgroundTint="@android:color/holo_orange_dark"
                 android:text="Scale Animations"
                 android:textAllCaps="false" />
 
@@ -49,6 +51,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                app:backgroundTint="@android:color/holo_green_dark"
                 android:onClick="clipAnimation"
                 android:text="Clip Animations"
                 android:textAllCaps="false" />
@@ -62,6 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                app:backgroundTint="@android:color/holo_orange_dark"
                 android:onClick="translateAnimationLeftRight"
                 android:text="Translate Animations Left to Right"
                 android:textAllCaps="false" />
@@ -70,6 +74,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                app:backgroundTint="@android:color/holo_red_dark"
                 android:onClick="translateAnimationRightLeft"
                 android:text="Translate Animations Right to Left"
                 android:textAllCaps="false" />
@@ -78,6 +83,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                app:backgroundTint="@android:color/holo_green_dark"
                 android:onClick="translateAnimationTopBottom"
                 android:text="Translate Animations Top to Bottom"
                 android:textAllCaps="false" />
@@ -94,6 +100,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                app:backgroundTint="@android:color/holo_red_dark"
                 android:onClick="translateAnimationFade"
                 android:text="Translate Animations Fade"
                 android:textAllCaps="false" />
@@ -102,6 +109,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                app:backgroundTint="@android:color/holo_green_dark"
                 android:text="Shared Transtion"
                 android:textAllCaps="false" />
 
@@ -151,6 +159,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="zoom"
+                app:backgroundTint="@android:color/holo_red_dark"
                 android:text="Zoom Animations"
                 android:textAllCaps="false" />
 
@@ -167,6 +176,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="split"
+                app:backgroundTint="@android:color/holo_green_dark"
                 android:text="Split Animations"
                 android:textAllCaps="false" />
 
@@ -175,6 +185,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="shrink"
+                app:backgroundTint="@android:color/holo_blue_dark"
                 android:text="Shrink Animations"
                 android:textAllCaps="false" />
 
@@ -182,6 +193,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                app:backgroundTint="@android:color/holo_orange_dark"
                 android:onClick="inAndOut"
                 android:text="In And Out Animations"
                 android:textAllCaps="false" />
@@ -191,6 +203,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="swipeLeft"
+                app:backgroundTint="@android:color/holo_green_dark"
                 android:text="Swipe Left Animations"
                 android:textAllCaps="false" />
 
@@ -199,6 +212,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="swipeRight"
+                app:backgroundTint="@android:color/holo_blue_dark"
                 android:text="Swipe Right Animations"
                 android:textAllCaps="false" />
 
@@ -207,6 +221,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="slideLeft"
+                app:backgroundTint="@android:color/holo_orange_dark"
                 android:text="Slide Left Animations"
                 android:textAllCaps="false" />
 
@@ -214,6 +229,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                app:backgroundTint="@android:color/holo_green_dark"
                 android:onClick="slideRight"
                 android:text="Slide Right Animations"
                 android:textAllCaps="false" />
@@ -223,6 +239,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="slideDown"
+                app:backgroundTint="@android:color/holo_orange_dark"
                 android:text="Slide Down Animations"
                 android:textAllCaps="false" />
 
@@ -231,6 +248,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="slideUp"
+                app:backgroundTint="@android:color/holo_green_dark"
                 android:text="Slide Up Animations"
                 android:textAllCaps="false" />
 
@@ -239,6 +257,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="fade"
+                app:backgroundTint="@android:color/holo_red_dark"
                 android:text="Fade Animations"
                 android:textAllCaps="false" />
 
@@ -247,6 +266,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="windmill"
+                app:backgroundTint="@android:color/holo_orange_dark"
                 android:text="Windmill Animations"
                 android:textAllCaps="false" />
 
@@ -255,6 +275,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="diagonal"
+                app:backgroundTint="@android:color/holo_green_dark"
                 android:text="Diagonal Animations"
                 android:textAllCaps="false" />
 
@@ -263,6 +284,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="spin"
+                app:backgroundTint="@android:color/holo_blue_dark"
                 android:text="Spin Animations"
                 android:textAllCaps="false" />
         </com.google.android.material.circularreveal.CircularRevealLinearLayout>
