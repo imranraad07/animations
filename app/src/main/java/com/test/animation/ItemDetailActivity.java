@@ -1,6 +1,7 @@
 package com.test.animation;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -12,6 +13,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.ActionBar;
+import androidx.core.view.ViewCompat;
 
 import android.view.MenuItem;
 
@@ -23,10 +25,19 @@ import android.view.MenuItem;
  */
 public class ItemDetailActivity extends AppCompatActivity {
 
+    // View name. Used for activity scene transitions
+    public static final String VIEW_NAME_ID = "detail:id";
+    public static final String VIEW_NAME_CONTENT = "detail:content";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_detail);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            postponeEnterTransition();
+        }
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.detail_toolbar);
         setSupportActionBar(toolbar);
 
@@ -65,6 +76,13 @@ public class ItemDetailActivity extends AppCompatActivity {
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.item_detail_container, fragment)
                     .commit();
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                ViewCompat.setTransitionName(findViewById(R.id.toolbar_layout), VIEW_NAME_ID);
+                ViewCompat.setTransitionName(findViewById(R.id.item_detail_container), VIEW_NAME_CONTENT);
+                startPostponedEnterTransition();
+            }
+
         }
     }
 

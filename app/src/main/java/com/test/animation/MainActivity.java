@@ -8,6 +8,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.util.Pair;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,14 +26,14 @@ public class MainActivity extends AppCompatActivity {
         startActivity(nextActivity);
     }
 
-    public void scaleAnimation(View v){
+    public void scaleAnimation(View v) {
         Intent subActivity = new Intent(this, NextActivity.class);
         Bundle scaleBundle = ActivityOptions.makeScaleUpAnimation(
                 v, 0, 0, v.getWidth(), v.getHeight()).toBundle();
         startActivity(subActivity, scaleBundle);
     }
 
-    public void clipAnimation(View v){
+    public void clipAnimation(View v) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             Intent subActivity = new Intent(this, NextActivity.class);
             Bundle scaleBundle = ActivityOptions.makeClipRevealAnimation(
@@ -69,11 +70,18 @@ public class MainActivity extends AppCompatActivity {
         startActivity(subActivity, translateBundle);
     }
 
-    public void translateAnimationFade(View v){
+    public void translateAnimationFade(View v) {
         Intent subActivity = new Intent(this, ItemListActivity.class);
         Bundle translateBundle = ActivityOptions.makeCustomAnimation(this,
                 R.anim.fade_in, R.anim.fade_out).toBundle();
         startActivity(subActivity, translateBundle);
+    }
+
+    public void sharedTransition(View v) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Intent subActivity = new Intent(this, ItemListActivity.class);
+            startActivity(subActivity);
+        }
     }
 
     public void zoom(View v) {

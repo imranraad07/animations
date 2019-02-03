@@ -10,7 +10,7 @@ Animations added are:
 * Translate Animations Top to Bottom
 * Translate Animations Bottom to Top
 * Translate Animations Fade
-* Shared Transtion (yet to be added)
+* Shared Transtion 
 * Circular Reveal From Top (yet to be added)
 * Circular Reveal From Bottom (yet to be added)
 * Circular Reveal From Middle (yet to be added)

@@ -117,7 +117,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:text="Shared Transtion (disabled)"
+                android:onClick="sharedTransition"
+                android:text="Shared Transtion (inside activity)"
                 android:textAllCaps="false"
                 app:backgroundTint="@android:color/black" />
 

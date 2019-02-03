@@ -10,7 +10,7 @@ public class PendingTransitionUtils {
     }
 
     public static void slideRight(Context context) {
-        ((Activity) context).overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+        ((Activity) context).overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
     }
 
     public static void slideDown(Context context) {
