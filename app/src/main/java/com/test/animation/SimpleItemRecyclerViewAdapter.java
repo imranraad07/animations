@@ -1,19 +1,15 @@
 package com.test.animation;
 
-import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.test.animation.dummy.DummyContent;
 
 import java.util.List;
 
-import androidx.core.app.ActivityOptionsCompat;
-import androidx.core.util.Pair;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class SimpleItemRecyclerViewAdapter extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.ViewHolder> {
@@ -50,7 +46,7 @@ public class SimpleItemRecyclerViewAdapter extends RecyclerView.Adapter<SimpleIt
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
-        holder.mIdView.setText(mValues.get(position).id);
+//        holder.mIdView.setText(mValues.get(position).id);
         holder.mContentView.setText(mValues.get(position).content);
 
         holder.itemView.setTag(mValues.get(position));
@@ -70,12 +66,12 @@ public class SimpleItemRecyclerViewAdapter extends RecyclerView.Adapter<SimpleIt
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
-        final TextView mIdView;
+        final ImageView mIdView;
         final TextView mContentView;
 
         ViewHolder(View view) {
             super(view);
-            mIdView = (TextView) view.findViewById(R.id.id_text);
+            mIdView = (ImageView) view.findViewById(R.id.id_image);
             mContentView = (TextView) view.findViewById(R.id.content);
         }
     }

@@ -4,11 +4,12 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/id_text"
+    <ImageView
+        android:id="@+id/id_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"
+        android:src="@drawable/ic_person_24dp"
         android:textAppearance="?attr/textAppearanceListItem" />
 
     <TextView

@@ -4,13 +4,16 @@ import android.app.Activity;
 
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 
+import android.os.Build;
 import android.os.Bundle;
 
+import androidx.core.view.ViewCompat;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.test.animation.dummy.DummyContent;
@@ -42,8 +45,8 @@ public class ItemDetailFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.item_detail, container, false);
 
-        if (mItem != null) {
-            ((TextView) rootView.findViewById(R.id.item_detail)).setText(mItem.details);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            ViewCompat.setTransitionName(rootView.findViewById(R.id.iv_icon), ItemDetailActivity.VIEW_NAME_ID);
         }
 
         return rootView;

@@ -87,7 +87,10 @@ public class ItemListActivity extends AppCompatActivity {
                     Intent intent = new Intent(context, ItemDetailActivity.class);
                     intent.putExtra(ItemDetailFragment.ARG_ITEM_ID, item.id);
 
-                    ActivityOptionsCompat activityOptions = ActivityOptionsCompat.makeSceneTransitionAnimation(ItemListActivity.this, new Pair<>(view.findViewById(R.id.id_text), ItemDetailActivity.VIEW_NAME_ID), new Pair<>(view.findViewById(R.id.content), ItemDetailActivity.VIEW_NAME_CONTENT));
+                    ActivityOptionsCompat activityOptions = ActivityOptionsCompat.makeSceneTransitionAnimation(ItemListActivity.this,
+//                            new Pair<>(view.findViewById(R.id.content), ItemDetailActivity.VIEW_NAME_CONTENT),
+                            new Pair<>(view.findViewById(R.id.id_image), ItemDetailActivity.VIEW_NAME_ID)
+                    );
 
                     context.startActivity(intent, activityOptions.toBundle());
                 }
