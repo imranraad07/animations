@@ -43,35 +43,35 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void translateAnimationLeftRight(View v) {
-        Intent subActivity = new Intent(this, ItemListActivity.class);
+        Intent subActivity = new Intent(this, LoginActivity.class);
         Bundle translateBundle = ActivityOptions.makeCustomAnimation(this,
                 R.anim.slide_in_left, R.anim.slide_out_left).toBundle();
         startActivity(subActivity, translateBundle);
     }
 
     public void translateAnimationRightLeft(View v) {
-        Intent subActivity = new Intent(this, ItemListActivity.class);
+        Intent subActivity = new Intent(this, LoginActivity.class);
         Bundle translateBundle = ActivityOptions.makeCustomAnimation(this,
                 R.anim.slide_in_right, R.anim.slide_out_right).toBundle();
         startActivity(subActivity, translateBundle);
     }
 
     public void translateAnimationTopBottom(View v) {
-        Intent subActivity = new Intent(this, ItemListActivity.class);
+        Intent subActivity = new Intent(this, LoginActivity.class);
         Bundle translateBundle = ActivityOptions.makeCustomAnimation(this,
                 R.anim.slide_in_top, R.anim.slide_out_top).toBundle();
         startActivity(subActivity, translateBundle);
     }
 
     public void translateAnimationBottomTop(View v) {
-        Intent subActivity = new Intent(this, ItemListActivity.class);
+        Intent subActivity = new Intent(this, LoginActivity.class);
         Bundle translateBundle = ActivityOptions.makeCustomAnimation(this,
                 R.anim.slide_in_bottom, R.anim.slide_out_bottom).toBundle();
         startActivity(subActivity, translateBundle);
     }
 
     public void translateAnimationFade(View v) {
-        Intent subActivity = new Intent(this, ItemListActivity.class);
+        Intent subActivity = new Intent(this, LoginActivity.class);
         Bundle translateBundle = ActivityOptions.makeCustomAnimation(this,
                 R.anim.fade_in, R.anim.fade_out).toBundle();
         startActivity(subActivity, translateBundle);
