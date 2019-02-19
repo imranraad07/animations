@@ -60,8 +60,7 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Following animations are custom transtions. animation time: 400ms(medium)"
-                app:backgroundTint="@android:color/black" />
+                android:text="Following animations are custom transtions. animation time: 400ms(medium)" />
 
             <com.google.android.material.button.MaterialButton
                 android:layout_width="300dp"
@@ -70,8 +69,7 @@
                 android:layout_weight="1"
                 android:onClick="translateAnimationLeftRight"
                 android:text="Translate Animations Left to Right"
-                android:textAllCaps="false"
-                app:backgroundTint="@color/sample_red" />
+                android:textAllCaps="false" />
 
             <com.google.android.material.button.MaterialButton
                 android:layout_width="300dp"
@@ -80,8 +78,7 @@
                 android:layout_weight="1"
                 android:onClick="translateAnimationRightLeft"
                 android:text="Translate Animations Right to Left"
-                android:textAllCaps="false"
-                app:backgroundTint="@color/sample_blue" />
+                android:textAllCaps="false" />
 
             <com.google.android.material.button.MaterialButton
                 android:layout_width="300dp"
@@ -90,8 +87,7 @@
                 android:layout_weight="1"
                 android:onClick="translateAnimationTopBottom"
                 android:text="Translate Animations Top to Bottom"
-                android:textAllCaps="false"
-                app:backgroundTint="@color/sample_green" />
+                android:textAllCaps="false" />
 
             <com.google.android.material.button.MaterialButton
                 android:layout_width="300dp"
@@ -100,8 +96,7 @@
                 android:layout_weight="1"
                 android:onClick="translateAnimationBottomTop"
                 android:text="Translate Animations Bottom to Top"
-                android:textAllCaps="false"
-                app:backgroundTint="@color/sample_yellow" />
+                android:textAllCaps="false" />
 
             <com.google.android.material.button.MaterialButton
                 android:layout_width="300dp"
@@ -119,38 +114,7 @@
                 android:layout_weight="1"
                 android:onClick="sharedTransition"
                 android:text="Shared Transtion (inside activity)"
-                android:textAllCaps="false"
-                app:backgroundTint="@android:color/black" />
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:text="Circular Reveal From Top (disabled)"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                app:backgroundTint="@color/sample_red" />
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:text="Circular Reveal From Bottom (disabled)"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                app:backgroundTint="@color/sample_yellow" />
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:text="Circular Reveal From Middle (disabled)"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                app:backgroundTint="@color/sample_green" />
+                android:textAllCaps="false" />
 
             <com.google.android.material.button.MaterialButton
                 android:layout_width="300dp"
@@ -159,14 +123,12 @@
                 android:layout_weight="1"
                 android:text="Circular Reveal From Touch Point (disabled)"
                 android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                app:backgroundTint="@color/sample_blue" />
+                android:textColor="@android:color/white" />
 
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Following animations are overridePendingTransition. animation time: 400ms(medium)"
-                app:backgroundTint="@android:color/black" />
+                android:text="Following animations are overridePendingTransition. animation time: 400ms(medium)" />
 
             <com.google.android.material.button.MaterialButton
                 android:layout_width="300dp"

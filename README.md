@@ -11,10 +11,7 @@ Animations added are:
 * Translate Animations Bottom to Top
 * Translate Animations Fade
 * Shared Transtion 
-* Circular Reveal From Top (yet to be added)
-* Circular Reveal From Bottom (yet to be added)
-* Circular Reveal From Middle (yet to be added)
-* Circular Reveal From Touch Point (yet to be added)
+* Circular Reveal From Top 
 * Zoom Animations
 * Card Animations
 * Split Animations
@@ -30,6 +27,8 @@ Animations added are:
 * Windmill Animations
 * Diagonal Animations
 * Spin Animations
+
+
 Helpful links:
 https://github.com/Binary-Finery/Bungee
 http://www.vogella.com/tutorials/AndroidAnimation/article.html
