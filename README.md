@@ -31,4 +31,5 @@ Animations added are:
 
 Helpful links:
 https://github.com/Binary-Finery/Bungee
+
 http://www.vogella.com/tutorials/AndroidAnimation/article.html
